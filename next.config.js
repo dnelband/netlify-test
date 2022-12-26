@@ -3,8 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   publicRuntimeConfig: {
     // Will be available on both server and client
-    projectId: process.env.PROJECT_ID,
-    dataset: process.env.DATASET,
+    sanity: {
+      projectId: process.env.SANITY_PROJECT_ID,
+      dataset: process.env.SANITY_DATASET,
+    },
   },
 };
 
