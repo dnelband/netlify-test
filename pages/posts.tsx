@@ -1,6 +1,11 @@
+import { Post } from "../lib/models/types";
 import sanity from "../sanity";
 
-const Posts = ({ posts }) => {
+type PostsProps = {
+  posts: Post[];
+};
+
+const Posts = ({ posts }: PostsProps) => {
   return (
     <ul>
       {posts.map((post) => (
